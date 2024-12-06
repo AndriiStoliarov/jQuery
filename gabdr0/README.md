@@ -13,3 +13,9 @@ gabdr0 - YouTube-канал посвящен верстке и созданию 
 Курс по jQuery от А до Я. Уроки библиотеки jQuery для начинающих.
 
 Ссылка на видео курс: [YouTube](https://www.youtube.com/watch?v=vPnom5AiD1w&list=PLfe1kRw3wJm1THSnShR473hltjgt2Li8y)
+
+![difference](data/difference.png)
+
+![attributeSelector](data/attributeSelector-1.png)
+
+![attributeSelector](data/attributeSelector-2.png)

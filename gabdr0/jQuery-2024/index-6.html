@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+<body>
+
+    <h1>Страна</h1>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <p><b>Lorem ipsum</b> dolor sit amet consectetur adipisicing elit. Quaerat dolor ratione aperiam enim velit, vel dicta dolorum mollitia tempore, cumque corrupti quia officiis laborum soluta a, veniam repellat aspernatur tempora?</p>
+    <p><b>Lorem ipsum,</b> dolor sit amet consectetur adipisicing elit. Itaque hic vero atque eveniet nostrum debitis neque, culpa fuga deleniti non sint impedit et illo pariatur veritatis, modi ullam autem porro!</p>
+
+
+    <script src="jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // выбор одного соседнего элемента +
+            // $("h1 + p").css("font-size", "22px");
+            // выбор всех соседних элементов ~
+            $("h1 ~ p").css("font-size", "22px");
+        });
+    </script>
+
+    <!-- <ul class="menu">
+        <li>О компании</li>
+        <li>
+            Каталог
+            <ul>
+                <li>СЕдан</li>
+                <li>Хэтчбек</li>
+                <li>Универсал</li>
+                <li>Купе</li>
+            </ul>
+        </li>
+        <li>Услуги</li>
+        <li>Фотогалерея</li>
+        <li>Контакты</li>
+    </ul>
+
+    <script src="jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // $(".menu li").css("border", "2px solid #2ecc71");
+            $(".menu > li").css("border", "2px solid #2ecc71");
+        });
+    </script> -->
+</body>
+</html>
