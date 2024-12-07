@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+<body>
+    <ul class="menu">
+        <li>О компании</li>
+        <li>
+            Каталог
+            <ul>
+                <li>СЕдан</li>
+                <li>Хэтчбек</li>
+                <li>Универсал</li>
+                <li>Купе</li>
+            </ul>
+        </li>
+        <li>Услуги</li>
+        <li>Фотогалерея</li>
+        <li>Контакты</li>
+    </ul>
+
+    <script src="jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // $(".menu li").css("border", "2px solid #2ecc71");
+            $(".menu > li").css("border", "2px solid #2ecc71");
+        });
+    </script>
+</body>
+</html>
