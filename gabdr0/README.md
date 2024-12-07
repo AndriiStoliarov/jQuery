@@ -19,5 +19,3 @@ gabdr0 - YouTube-канал посвящен верстке и созданию 
 ![attributeSelector](data/attributeSelector-1.png)
 
 ![attributeSelector](data/attributeSelector-2.png)
-
-![filters](data/filters.png)
