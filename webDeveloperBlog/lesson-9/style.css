@@ -1,0 +1,17 @@
+.anim {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.hello {
+    background-color: green;
+}
+
+/* .first {
+    margin-left: 15px;
+} */
+
+div {
+    padding: 15px;
+}
