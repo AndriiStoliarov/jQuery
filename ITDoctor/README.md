@@ -6,7 +6,7 @@ I teach HTML, CSS, JavaScript, PHP, work with preprocessors, assemblers and the 
 
 There is always a choice to study for free or not!
 
-![logo](data/webDeveloperBlogLogo.jpg)
+![logo](data/ITDoctorLogo.jpg)
 
 
 ## jQueryLessons
