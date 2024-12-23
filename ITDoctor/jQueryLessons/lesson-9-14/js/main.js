@@ -37,13 +37,27 @@
 $(function() {
     // $('.mainText h2').css("color", "blue").hide(2000).fadeIn(3000);
 
-    function elementOut(element, time) {
-        if (time > 5000 || time < 1000 || isNaN(time)) {
-            return false;
-        } else {
-            var className = "." + element;
-            $(className).fadeOut(time);
-        }
-    }
-    elementOut('mainText', 500);
+    // function elementOut(element, time) {
+    //     if (time > 5000 || time < 1000 || isNaN(time)) {
+    //         return false;
+    //     } else {
+    //         var className = "." + element;
+    //         $(className).fadeOut(time);
+    //     }
+    // }
+    // elementOut('mainText', 500);
+});
+
+//* Lesson-13
+// $(function() {
+//     function NewFunc() {
+//         console.log("New function body");
+//     }
+
+//     $('.mainText').fadeTo(4000, 0.2, NewFunc()).fadeTo(2000, 1);
+// });
+
+//* Lesson-14
+$(function() {
+    $('.mainText').slideUp(2000).slideDown(1000);
 });
