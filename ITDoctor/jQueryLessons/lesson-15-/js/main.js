@@ -1,6 +1,6 @@
 //* Lesson-15
 // Добавление и удаление атрибутов
-$(function() {
+// $(function() {
     // var src = $('.logo img').attr('src');
     // console.log(src);
 
@@ -10,10 +10,17 @@ $(function() {
 
     // $('.logo img').removeAttr('src');
 
-    function changeAttr(element, newAttr, newValue) {
-        var clasname = "." + element;
-        $(clasname).attr(newAttr, newValue);
-    }
+    // function changeAttr(element, newAttr, newValue) {
+    //     var clasname = "." + element;
+    //     $(clasname).attr(newAttr, newValue);
+    // }
 
-    changeAttr('logo', 'title', 'some new text');
+    // changeAttr('logo', 'title', 'some new text');
+// });
+
+//* Lesson-16
+// Добавление и удаление классов
+$(function() {
+    // $('nav menu').addClass('border').removeClass('border');
+    $('nav menu').removeClass('border');
 });
