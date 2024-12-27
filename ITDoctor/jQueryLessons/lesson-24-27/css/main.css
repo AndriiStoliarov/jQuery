@@ -1,5 +1,8 @@
-.mainText {
+.border {
     border: 1px solid red;
+    padding: 10px;
+    background: #222;
+    color: white;
 }
 
 .h2 {
