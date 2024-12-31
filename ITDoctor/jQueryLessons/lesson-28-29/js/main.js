@@ -9,3 +9,15 @@ $(function() {
         console.log(event.target);
     });
 });
+
+//* Lesson-29
+$(function() {
+    $('.btn, .arrowDown').on('click', function(event) {
+        // event.preventDefault();
+        var answer = confirm('Вы хотите отправить данные?');
+
+        if (!answer) {
+            event.preventDefault();
+        }
+    });
+});
