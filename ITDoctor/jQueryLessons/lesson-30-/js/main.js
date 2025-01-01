@@ -1,23 +1,44 @@
-//* Lesson-28
-$(function() {
-    $('.mainText').on('click', function(event) {
-        // console.log(event.screenX + " " + event.screenY);
-        // console.log(event.pageX + " " + event.pageY);
-        console.log(event.altKey);
-        console.log(event.ctrlKey);
-        console.log(event.shiftKey);
-        console.log(event.target);
+//* Lesson-30
+$(document).ready(function() {
+    $('.small a').on('click', function(event) {
+        if ($('.big img').attr('src') !== $(this).attr('href')) {
+            $('.big img').hide().attr('src', $(this).attr('href')).fadeIn(1000);
+        }
+        event.preventDefault();
+    });
+
+    $('.button').on('click', function() {
+        $('.gallery').slideToggle(500);
+
+        if ($('.button').text() == '-') {
+            $('.button').text('+');
+        } else {
+            $('.button').text('-');
+        }
+    });
+
+    $('.small a img').on('click', function() {
+        $('.small a img').fadeTo(500, 1).css({
+            'border': 'none'
+        });
+
+        $(this).fadeTo(500, 0.6).css({
+            'border': '1px dotted red'
+        });
     });
 });
 
-//* Lesson-29
+//* Lesson-31
+// фильтрация элементов формы
 $(function() {
-    $('.btn, .arrowDown').on('click', function(event) {
-        // event.preventDefault();
-        var answer = confirm('Вы хотите отправить данные?');
-
-        if (!answer) {
-            event.preventDefault();
-        }
-    });
+    $(':checkbox').fadeOut(1000);
+    $(':radio').fadeOut(1000);
+    $(':submit').fadeOut(1000);
+    $(':reset').fadeOut(1000);
+    $(':file').fadeOut(1000);
+    $(':button').fadeOut(1000);
+    $(':text').fadeOut(1000);
+    $(':password').fadeOut(1000);
+    $(':input').fadeOut(1000);
+    $('.form1 :input').fadeOut(1000);
 });
