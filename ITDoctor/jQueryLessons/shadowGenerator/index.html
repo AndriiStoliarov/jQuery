@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Text shadow generator</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #eeeeee;
+        }
+
+        label {
+            display: block;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 6px;
+            font-size: 40px;
+            color: #000000;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+        }
+
+        input[type="color"] {
+            bottom: none;
+            background-color: transparent;
+            width: 55px;
+            height: 55px;
+            padding: 0;
+            margin-bottom: 15px;
+        }
+
+        input[type="color"]:hover {
+            cursor: pointer;
+        }
+
+        textarea {
+            width: 100%;
+            resize: none;
+            margin-bottom: 15px;
+            max-width: 300px;
+            font-size: 13px;
+        }
+
+        .card {
+            /* width: 30%; */
+            height: 100%;
+        }
+
+        .card-header {
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .row > div {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+<h1>Text shadow generator</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-x1-4 col-md-4">
+            <div class="card">
+                <div class="card-header bg-primary">Настройки:</div>
+                <div class="card-body">
+                    <label for="font_size">Размер щрифта</label>
+                    <input class="custom-range" id="font_size" type="range" min="8" max="40" step="1" value="40">
+                    <label for="offset_x">Смещение по оси X</label>
+                    <input class="custom-range" id="offset_x" type="range" min="-15" max="15" step="1" value="4">
+                    <label for="offset_y">Смещение по оси Y</label>
+                    <input class="custom-range" id="offset_y" type="range" min="-15" max="15" step="1" value="-1">
+                    <label for="blur">Размытие</label>
+                    <input class="custom-range" id="blur" type="range" min="0" max="15" step="1" value="0">
+                </div>
+            </div>
+        </div>
+        <div class="col-x1-4 col-md-4">
+            <div class="card">
+                <div class="card-header bg-primary">Цвет:</div>
+                <div class="card-body">
+                    <input type="color" value="#ff0000">
+                    <label for="opacity">Прозрачность</label>
+                    <input class="custom-range" id="opacity" type="range" min="0" max="1" step="0.01" value="1">
+                </div>
+            </div>
+        </div>
+        <div class="col-x1-4 col-md-4">
+            <div class="card">
+                <div class="card-header bg-primary">Результат:</div>
+                <div class="card-body">
+                    <label for="resultHex">Цвет в HEX</label>
+                    <textarea id="resultHex" rows="4" readonly></textarea><br>
+                    <label for="resultRgba">Цвет в RGBA</label>
+                    <textarea id="resultRgba" rows="3" readonly></textarea><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="jquery-3.7.1.js"></script>
+</body>
+</html>

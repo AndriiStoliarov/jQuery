@@ -66,16 +66,16 @@ $(function() {
 //* Lesson-35
 // Событие blur и change
 $(function() {
-    $('.text1').on('focus', function() {
-        $(this).addClass('border');
-    });
+    // $('.text1').on('focus', function() {
+    //     $(this).addClass('border');
+    // });
 
-    $('.text1').on('blur', function() {
-        $(this).removeClass('border');
-    });
+    // $('.text1').on('blur', function() {
+    //     $(this).removeClass('border');
+    // });
 
-    $('#select1').change(function() {
-        var value = $('#select1 :selected').val();
+    // $('#select1').change(function() {
+    //     var value = $('#select1 :selected').val();
 
         // if(value == 1) {
         //     $('#select2').html('<option value="1">Number 1</option><option value="2">Number 2</option>');
@@ -88,19 +88,33 @@ $(function() {
         // }
 
         // switch construction
-        switch(value) {
-            case '1':
-                $('#select2').html('<option value="1">Number 1</option><option value="2">Number 2</option>');
-                break;
-            case '2':
-                $('#select2').html('<option value="1">Number 1</option><option value="2">Number 2</option><option value="3">Number 3</option>');
-                break;
-            case '3':
-                $('#select2').html('<option value="1">Number 1</option><option value="2">Number 2</option><option value="3">Number 3</option><option value="4">Number 4</option>');
-                break;
-            case '4':
-                $('#select2').html('<option value="1">Number 1</option>');
-                break;
-        }
+    //     switch(value) {
+    //         case '1':
+    //             $('#select2').html('<option value="1">Number 1</option><option value="2">Number 2</option>');
+    //             break;
+    //         case '2':
+    //             $('#select2').html('<option value="1">Number 1</option><option value="2">Number 2</option><option value="3">Number 3</option>');
+    //             break;
+    //         case '3':
+    //             $('#select2').html('<option value="1">Number 1</option><option value="2">Number 2</option><option value="3">Number 3</option><option value="4">Number 4</option>');
+    //             break;
+    //         case '4':
+    //             $('#select2').html('<option value="1">Number 1</option>');
+    //             break;
+    //     }
+    // });
+});
+
+//* Lesson-36
+// Блокировка элементов формы
+$(function() {
+    $(':submit').on('click', function(event) {
+        $('.text2').attr('disabled', 'disabled');
+        event.preventDefault();
+    });
+
+    $(':reset').on('click', function(event) {
+        $('.text2').removeAttr('disabled');
+        event.preventDefault();
     });
 });
