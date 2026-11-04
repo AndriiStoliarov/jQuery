@@ -6,6 +6,8 @@
 
 ## gabdr0
 
+jQuery course for beginners
+
 ## ITDoctor
 
 jQuery course for beginners
