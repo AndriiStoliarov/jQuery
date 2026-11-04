@@ -1,12 +1,9 @@
-# [freeCodeCamp.org](https://www.youtube.com/@freecodecamp)
+# freeCodeCamp
 
-Learn to code for free.
+**Credits & acknowledgments**
 
-![logo](data/freeCodeCampLogo.jpg)
-
+This project was coded line-by-line for practice and learning purposes, following the tutorial by [freeCodeCamp.org](https://www.youtube.com/@freecodecamp).
 
 ## jQueryLessons
-jQuery - Beau teaches JavaScript.
-jQuery is a very popular, lightweight JavaScript library. The purpose of jQuery is to make it much easier to use JavaScript on websites. jQuery simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
 
-Ссылка на видео курс: [YouTube](https://www.youtube.com/playlist?list=PLWKjhJtqVAbkyK9woUZUtunToLtNGoQHB)
+**Tutorial playlist:** [YouTube](https://www.youtube.com/playlist?list=PLWKjhJtqVAbkyK9woUZUtunToLtNGoQHB)

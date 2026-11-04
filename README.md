@@ -4,6 +4,8 @@
 
 ## freeCodeCamp
 
+jQuery - Beau teaches JavaScript
+
 ## gabdr0
 
 jQuery course for beginners
