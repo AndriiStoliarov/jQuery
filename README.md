@@ -11,3 +11,5 @@
 jQuery course for beginners
 
 ## webDeveloperBlog
+
+jQuery fundamentals course
