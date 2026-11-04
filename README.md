@@ -8,4 +8,6 @@
 
 ## ITDoctor
 
+jQuery course for beginners
+
 ## webDeveloperBlog
