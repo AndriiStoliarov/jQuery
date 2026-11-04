@@ -8,10 +8,6 @@ This project was coded line-by-line for practice and learning purposes, followin
 
 **Tutorial playlist:** [YouTube](https://www.youtube.com/playlist?list=PLfe1kRw3wJm1THSnShR473hltjgt2Li8y)
 
----
-
 ![difference](data/difference.png)
-
 ![attribute selector page 1](data/attributeSelector-1.png)
-
 ![attribute selector page 2](data/attributeSelector-2.png)
